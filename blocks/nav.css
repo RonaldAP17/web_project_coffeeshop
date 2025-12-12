@@ -4,29 +4,29 @@
 }
 
 .nav__logo {
+  display: flex;
   position: relative;
   left: 30px;
   top: 30px;
+  margin-bottom: 183px;
+  height: 39px;
+  width: 105px;
 }
 
 .nav__links {
   display: flex;
-  list-style-type: none;
+  margin-right: 80px;
+  margin-top: 30px;
   column-gap: 20px;
-  right: 80px;
-  top: 30px;
-  padding: 0;
-  margin: 8px 0 0;
-  height: 30px;
-  position: relative;
+  list-style-type: none;
 }
 
 .nav__link {
-  font-family: "Inter";
+  font-family: "Inter", Arial, Sans-serif;
   font-style: normal;
-  color: #000000;
-  text-decoration: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  color: #000000;
+  text-decoration: none;
 }

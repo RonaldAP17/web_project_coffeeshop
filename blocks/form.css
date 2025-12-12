@@ -8,7 +8,7 @@
   margin: 0;
 }
 
-.form__label {
+.form__lable {
   display: block;
   margin-bottom: 8px;
   font-weight: 500;
@@ -34,21 +34,29 @@
 }
 
 .form__button {
-  background-color: #2f80ed;
-  color: #fff;
-  width: 385px;
+  max-width: 385px;
   padding: 0 100px;
   border-radius: 4px;
   margin-bottom: 32px;
-  display: block;
   height: 60px;
-  line-height: 30px;
-  box-sizing: border-box;
   font-weight: 500;
   font-size: 16px;
+  line-height: 30px;
+  box-sizing: border-box;
+  background-color: #2f80ed;
+  color: #fff;
 }
 
-.form__label:nth-last-child(1) {
+.form__button:hover {
+  opacity: 0.7;
+}
+
+.form__fieldset_el_center {
+  display: flex;
+  justify-content: center;
+}
+
+.form__lable_direction_right {
   display: inline;
   margin-left: 12px;
 }
