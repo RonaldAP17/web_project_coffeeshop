@@ -1,76 +1,71 @@
 .header {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  min-height: 720px;
-  max-height: 800px;
+  align-items: center;
 }
 
-.header__span-accent {
-  font-family: "Noto Serif", "Times New Roman", serif;
-  color: #2f80ed;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 58px;
-  line-height: 72px;
-  display: block;
+.header__logo {
+  max-width: 300px;
+  margin-top: 10px;
+  padding-bottom: 92px;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header__title {
-  font-family: "Inter", "Arial", sans-serif;
-  max-width: 709px;
-  font-style: normal;
-  font-size: 58px;
-  letter-spacing: -1px;
-  line-height: 76px;
-  font-weight: 500;
-  margin-top: 183px;
-  margin-left: 80px;
+  max-width: 720px;
+  margin: 0 auto;
+  font-family: "InterVariable", sans-serif;
+  font-weight: 900;
+  font-size: 97px;
+  line-height: 1.5;
+  text-align: center;
 }
 
-.header__description {
-  font-family: "Inter", "Arial", sans-serif;
-  max-width: 683px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 28px;
-  margin-left: 80px;
+.header__subheading {
+  max-width: 720px;
+  margin-bottom: 64px;
+  font-size: 30px;
+  line-height: 1;
+  text-align: center;
+}
+
+.header__content-image {
+  max-width: 990px;
+  margin: auto;
 }
 
 .header__image {
-  position: absolute;
-  top: 124px;
-  right: 5px;
-  width: 646px;
-  height: 568px;
+  width: 100%;
+  padding-bottom: 0;
 }
 
-.header__footer {
-  justify-content: space-between;
-  margin-top: auto;
-  padding: 0 80px 40px 80px;
-  display: flex;
-  align-items: end;
+@media screen and (max-width: 320px) {
+  .header__logo {
+    max-width: 190px;
+    padding-bottom: 50px;
+  }
+
+  .header__title {
+    max-width: 220px;
+    font-size: 40px;
+    line-height: 1;
+  }
+
+  .header__subheading {
+    max-width: 290px;
+    font-size: 16px;
+  }
 }
 
-.header__link {
-  color: #2f80ed;
-  text-decoration: none;
-}
-
-.header__address {
-  margin: 0;
-  color: #838383;
-}
-
-.header__paragraph {
-  font-family: "Inter", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #838383;
-  margin: 0;
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .header__title {
+    max-width: 530px;
+    font-size: 75px;
+    line-height: 1;
+  }
 }
